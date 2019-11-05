@@ -1,0 +1,11 @@
+<%= flash[:success] %>
+<section class="name">
+	<h4 class="show-title">Title:
+	 <%= @book.title %>
+	</h4>
+	<h4 class="show-title">Body:
+	 <%= @book.body %>
+	</h4>
+
+<%= link_to "Edit", edit_book_path(@book) %>
+<%= link_to "Back", books_path %>
